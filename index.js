@@ -35,7 +35,7 @@ bot.on('message', message=>{
 
 bot.on('message', message=>{
     if(message.content === "daniel"){
-        message.reply("betto!");
+        message.channel.send("betto!");
     }
 })
 
@@ -47,7 +47,7 @@ bot.on('message', message=>{
 
 bot.on('message', message=>{
     if(message.content === "aids"){
-        message.reply("is dumb");
+        message.channel.send("is dumb");
     }
 })
 
@@ -59,7 +59,7 @@ bot.on('message', message=>{
 
 bot.on('message', message=>{
     if(message.content === "miranda"){
-        message.reply("cosgrove");
+        message.channel.send("cosgrove");
     }
 })
 
