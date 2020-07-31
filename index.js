@@ -73,6 +73,12 @@ bot.on('message', message=>{
 })
 
 bot.on('message', message=>{
+    if(message.content === "monkey"){
+        message.channel.send("MONKY MONKY GANG BOIIIII!!!!!");
+    }
+})
+
+bot.on('message', message=>{
     if(message.content === "morning gang"){
         message.reply("morning lucy!");
     }
