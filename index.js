@@ -14,18 +14,16 @@ bot.on('message', message=>{
     switch(args[0]){
         case 'help':
             message.reply('go ask ur mom for help');
-            break;
+        break;
         case 'pornsites':
             message.channel.send('pornhub.com, redtube.com, xvideos.com');
-            break;
+        break;
         case 'clear':
             if(!args[1]) return message.reply('I could not clear that shit, you hoe')
             message.channel.bulkDelete(args[1]);
             message.reply('here daddy, i cleared the messages for u <3');
-            break;
-        case 'sex':
-            message.reply('i'm here for you baby'); 
-            break; 
+        break;
+    }
 })
 
 bot.on('message', message=>{
