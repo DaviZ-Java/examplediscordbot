@@ -89,4 +89,13 @@ bot.on('message', message=>{
     }
 })
 
-bot.login(process.env.token);
+bot.on('guildMemberAdd', member => {
+    // Send the message to a designated channel on a server:
+    const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+    // Do nothing if the channel wasn't found on this server
+    if (!channel) return;
+    // Send the message, mentioning the member
+    channel.send(`welcome sexy i am the server hoe god, ${member}`);
+  });  
+
+bot.login(process.env.token);   
