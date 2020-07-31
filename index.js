@@ -6,7 +6,6 @@ const PREFIX = '$';
 bot.on('ready', () =>{
     console.log('bot is online!');
 })
-
 //commands 
 bot.on('message', message=>{
 
@@ -30,9 +29,7 @@ bot.on('message', message=>{
     }
 })
 //end of commands 
-
 //reply to certain words
-
 bot.on('message', message=>{
     if(message.content === "Ugh Cringe"){
         message.reply("what do you want hoe?");
@@ -93,17 +90,11 @@ bot.on('message', message=>{
     }
 })
 //end of reply to certain words
-
-
 //welcome to new members
 bot.on('guildMemberAdd', member => {
-    // Send the message to a designated channel on a server:
     const channel = member.guild.channels.cache.find(ch => ch.name === '𝙜𝙚𝙣𝙚𝙧𝙖𝙡');
-    // Do nothing if the channel wasn't found on this server
     if (!channel) return;
-    // Send the message, mentioning the member
     channel.send(`welcome sexy i am the server hoe god, ${member}`);
   });  
 //end of welcome to new members
-
 bot.login(process.env.token);   
