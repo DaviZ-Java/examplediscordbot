@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const PREFIX = '#';
+const PREFIX = '$';
 
 bot.on('ready', () =>{
     console.log('bot is online!');
@@ -24,8 +24,8 @@ bot.on('message', message=>{
             message.reply('here daddy, i cleared the messages for u <3');
             break;
         case 'sex':
-            message.reply('i'm here for you baby');
-            break;
+            message.reply('i'm here for you baby'); 
+            break; 
     }
 
 })
