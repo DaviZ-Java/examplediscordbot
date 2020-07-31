@@ -16,7 +16,7 @@ bot.on('message', message=>{
             message.reply('go ask ur mom for help');
             break;
         case 'pornsites':
-            message.channel.send('pornhub.com, redtube.com')
+            message.channel.send('pornhub.com, redtube.com, xvideos.com')
             break;
         case 'clear':
             if(!args[1]) return message.reply('I could not clear that shit, you hoe')
