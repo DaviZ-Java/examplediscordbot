@@ -83,4 +83,10 @@ bot.on('message', message=>{
     }
 })
 
+bot.on('message', message=>{
+    if(message.content === "dance for me"){
+        message.reply("https://tenor.com/view/dancing-excited-dance-dance-move-smile-gif-16099354");
+    }
+})
+
 bot.login(process.env.token);
