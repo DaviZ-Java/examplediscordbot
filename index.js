@@ -26,7 +26,6 @@ bot.on('message', message=>{
         case 'sex':
             message.reply('i'm here for you baby'); 
             break; 
-
 })
 
 bot.on('message', message=>{
