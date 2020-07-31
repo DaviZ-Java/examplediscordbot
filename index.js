@@ -106,18 +106,4 @@ bot.on('guildMemberAdd', member => {
   });  
 //end of welcome to new members
 
-//join vc
-client.on('message', async message => {
-    if (!message.guild) return;
-  
-    if (message.content === '$join') {
-      if (message.member.voice.channel) {
-        const connection = await message.member.voice.channel.join();
-      } else {
-        message.reply('join a vc before inviting me, hoe');
-      }
-    }
-  });
-//end of join vc
-
 bot.login(process.env.token);   
