@@ -23,6 +23,9 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1]);
             message.reply('here daddy, i cleared the messages for u <3');
             break;
+        case 'sex':
+            message.reply('i'm here for you baby');
+            break;
     }
 
 })
