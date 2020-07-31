@@ -7,6 +7,7 @@ bot.on('ready', () =>{
     console.log('bot is online!');
 })
 
+//commands 
 bot.on('message', message=>{
 
     let args = message.content.substring(PREFIX.length).split(" ");
@@ -28,6 +29,9 @@ bot.on('message', message=>{
         break;
     }
 })
+//end of commands 
+
+//reply to certain words
 
 bot.on('message', message=>{
     if(message.content === "Ugh Cringe"){
@@ -88,7 +92,10 @@ bot.on('message', message=>{
         message.reply("https://tenor.com/view/dancing-excited-dance-dance-move-smile-gif-16099354");
     }
 })
+//end of reply to certain words
 
+
+//welcome to new members
 bot.on('guildMemberAdd', member => {
     // Send the message to a designated channel on a server:
     const channel = member.guild.channels.cache.find(ch => ch.name === '𝙜𝙚𝙣𝙚𝙧𝙖𝙡');
@@ -97,5 +104,20 @@ bot.on('guildMemberAdd', member => {
     // Send the message, mentioning the member
     channel.send(`welcome sexy i am the server hoe god, ${member}`);
   });  
+//end of welcome to new members
+
+//join vc
+client.on('message', async message => {
+    if (!message.guild) return;
+  
+    if (message.content === '$join') {
+      if (message.member.voice.channel) {
+        const connection = await message.member.voice.channel.join();
+      } else {
+        message.reply('join a vc before inviting me, hoe');
+      }
+    }
+  });
+//end of join vc
 
 bot.login(process.env.token);   
