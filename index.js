@@ -91,6 +91,12 @@ bot.on('message', message=>{
 })
 
 bot.on('message', message=>{
+    if(message.content === "kys"){
+        message.reply("stfu hoe");
+    }
+})
+
+bot.on('message', message=>{
     if(message.content === "dance for me"){
         message.reply("https://tenor.com/view/dancing-excited-dance-dance-move-smile-gif-16099354");
     }
