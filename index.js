@@ -109,4 +109,10 @@ bot.on('guildMemberAdd', member => {
     channel.send(`welcome sexy i am the server hoe god, ${member}`);
   });  
 //end of welcome to new members
+//join vc
+@client.command(pass_context=True)
+async def join(ctx):
+  channel = ctx.message.author.voice.voice_channel
+  await client.join_voice_channel(channel)
+//end of join vc
 bot.login(process.env.token);   
