@@ -118,4 +118,16 @@ bot.on('message', async message => {
     }
   });
 //end of join vc
+//bot streaming
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "pornhub.com"
+        }
+    });
+});
+//bot streaming
 bot.login(process.env.token);   
