@@ -129,5 +129,10 @@ bot.on('ready', () => {
         }
     });
 });
+
+bot.user.setActivity("with depression", {
+    type: "STREAMING",
+    url: "pornhub.com"
+  });
 //bot streaming
 bot.login(process.env.token);   
