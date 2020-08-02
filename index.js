@@ -117,5 +117,5 @@ bot.on('message', async message => {
       }
     }
   });
-//end of join vc
+//end of join vcc
 bot.login(process.env.token);   
