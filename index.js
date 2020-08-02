@@ -102,13 +102,6 @@ bot.on('message', message=>{
     }
 })
 //end of reply to certain words
-//welcome to new members
-//bot.on('guildMemberAdd', member => {
-    //const channel = member.guild.channels.cache.find(ch => ch.name === '𝙜𝙚𝙣𝙚𝙧𝙖𝙡');
-    //if (!channel) return;
-    //channel.send(`welcome sexy i am the server hoe god, ${member}`);
-  //});  
-//end of welcome to new members
 //join vc
 bot.on('message', async message => {
     // Voice only works in guilds, if the message does not come from a guild,
