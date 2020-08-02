@@ -103,11 +103,11 @@ bot.on('message', message=>{
 })
 //end of reply to certain words
 //welcome to new members
-bot.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.find(ch => ch.name === '𝙜𝙚𝙣𝙚𝙧𝙖𝙡');
-    if (!channel) return;
-    channel.send(`welcome sexy i am the server hoe god, ${member}`);
-  });  
+//bot.on('guildMemberAdd', member => {
+    //const channel = member.guild.channels.cache.find(ch => ch.name === '𝙜𝙚𝙣𝙚𝙧𝙖𝙡');
+    //if (!channel) return;
+    //channel.send(`welcome sexy i am the server hoe god, ${member}`);
+  //});  
 //end of welcome to new members
 //join vc
 bot.on('message', async message => {
@@ -115,12 +115,12 @@ bot.on('message', async message => {
     // we ignore it
     if (!message.guild) return;
   
-    if (message.content === '$join') {
+    if (message.content === '/join') {
       // Only try to join the sender's voice channel if they are in one themselves
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
       } else {
-        message.reply('join a vc, retard <3');
+        message.reply('You need to join a voice channel first!');
       }
     }
   });
