@@ -61,6 +61,12 @@ bot.on('message', message=>{
 })
 
 bot.on('message', message=>{
+    if(message.content === "oof"){
+        message.reply("oof");
+    }
+})
+
+bot.on('message', message=>{
     if(message.content === "miranda"){
         message.channel.send("cosgrove");
     }
