@@ -107,5 +107,11 @@ bot.on('message', message=>{
         message.reply("https://tenor.com/view/dancing-excited-dance-dance-move-smile-gif-16099354");
     }
 })
+
+bot.on('message', message=>{
+    if(message.content === "police"){
+        message.reply("is dum dum");
+    }
+})
 //end of reply to certain words
 bot.login(process.env.token);   
