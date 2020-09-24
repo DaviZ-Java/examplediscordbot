@@ -97,6 +97,12 @@ bot.on('message', message=>{
 })
 
 bot.on('message', message=>{
+    if(message.content === "police"){
+        message.reply("is dum dum");
+    }
+})
+
+bot.on('message', message=>{
     if(message.content === "kys"){
         message.reply("stfu hoe");
     }
@@ -108,10 +114,5 @@ bot.on('message', message=>{
     }
 })
 
-bot.on('message', message=>{
-    if(message.content === "police"){
-        message.reply("is dum dum");
-    }
-})
 //end of reply to certain words
 bot.login(process.env.token);   
