@@ -62,7 +62,7 @@ bot.on('message', message=>{
 
 bot.on('message', message=>{
     if(message.content === "oof"){
-        message.channel.send("oof");
+        message.reply("oof");
     }
 })
 
